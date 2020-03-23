@@ -1,4 +1,7 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 *{
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -8,6 +11,8 @@ html, body{
     font-size: 12px;
 }
 .d-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 a{
@@ -15,7 +20,7 @@ a{
     color: #488BF8;
 }
 img{
-    width: 100%;
+    width: 100% !important;
 }
 .icon{
     padding: 5px;
@@ -40,7 +45,9 @@ img{
     }
     #selling .card-selling{
         margin: 20px 0px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
     }
         #selling .card-selling .infor-card{
@@ -50,17 +57,23 @@ img{
             color: #707070;
         }
         #selling .card-selling .evaluate-selling{
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 5fr 7fr;
             grid-template-columns: 5fr 7fr;
             padding: 10px;
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
            
         }
         #selling .pink{
             color: #F2798F;
         }
             #selling .card-selling .evaluate-selling .y-selling div{
-                justify-content: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
             }
             #selling .card-selling .evaluate-selling .material-icons {
                 font-size: 50px;
@@ -86,7 +99,9 @@ img{
                 position: absolute;
                 top: 25%;
                 left: 50%;
-                transform: translate(-50%, -40%);
+                -webkit-transform: translate(-50%, -40%);
+                    -ms-transform: translate(-50%, -40%);
+                        transform: translate(-50%, -40%);
                 color: white;
                 font-size: 20px;
             }
@@ -99,7 +114,9 @@ img{
     }
 /* img-hotels */
 #img-hotels{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns:  repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     position: relative;
 }
@@ -116,7 +133,9 @@ img{
         color: white;
         padding: 5px;
         border: 1px solid white;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #img-hotels button i{
         margin: 5px;
@@ -137,7 +156,9 @@ img{
 }
     #King-of-room .room-card .data-card{
         background-color: #F7F7F7;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
         padding: 10px;
     }
@@ -150,7 +171,9 @@ img{
                 padding: 2px;
             }
             #King-of-room .room-card .data-card .loai-phong .list-img{
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns:repeat(2, 1fr);
                 grid-template-columns: repeat(2, 1fr);
             }
             #King-of-room .room-card .data-card .loai-phong li{
@@ -161,7 +184,9 @@ img{
                 }
         /* chi tiết */
         #King-of-room .room-card .data-card .chi-tiet{
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 45% 20% 15% 20%;
             grid-template-columns: 45% 20% 15% 20%;
         } 
         /* giá này đã bao gồm */
@@ -184,7 +209,9 @@ img{
             list-style-type: none;
         }
         #King-of-room .room-card .data-card .chi-tiet .gia-nay-da-bao-gom .infor-benefit .loi-ich li i{
-            transform: translateY(5px);
+            -webkit-transform: translateY(5px);
+                -ms-transform: translateY(5px);
+                    transform: translateY(5px);
             color: #28871C;
         }
         #King-of-room .room-card .data-card .chi-tiet .gia-nay-da-bao-gom .infor-benefit .uu-dai ul{
@@ -213,7 +240,8 @@ img{
         }
         #King-of-room .room-card .data-card .chi-tiet .Gia-phong .infor-price .price-old{
             color: #737373;
-            text-decoration: line-through #F20530 ;
+            -webkit-text-decoration: line-through #F20530 ;
+                    text-decoration: line-through #F20530 ;
         }
         #King-of-room .room-card .data-card .chi-tiet .Gia-phong .infor-price .price-new{
             color: #F20530;
@@ -232,7 +260,9 @@ img{
         }
         /* đặt phòng */
         #King-of-room .room-card .data-card .chi-tiet .dat-phong{
-            transform: translateY(34px);
+            -webkit-transform: translateY(34px);
+                -ms-transform: translateY(34px);
+                    transform: translateY(34px);
             background-color: white;
             height: calc(100% - 40px);
             padding: 10px;
@@ -275,7 +305,9 @@ img{
     }
 
 #Experiment .details{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 3fr;
     grid-template-columns: 1fr 3fr;
     padding: 20px 0px;
 }
@@ -333,11 +365,15 @@ img{
     margin: 50px 0px;
 }
 #empty-room .card-comment{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 3fr;
     grid-template-columns: 1fr 3fr;
     margin: 10px 0px;
 }
     #empty-room .card-comment .evaluate{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
         #empty-room .card-comment .evaluate div{
@@ -347,7 +383,9 @@ img{
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -55%);
+                -webkit-transform: translate(-50%, -55%);
+                    -ms-transform: translate(-50%, -55%);
+                        transform: translate(-50%, -55%);
                 font-size: 20px;
                 color: white;
             }
@@ -357,7 +395,9 @@ img{
         }
         #empty-room .card-comment .evaluate h6{
             color: #5392F9;
-            transform: translateY(40%);
+            -webkit-transform: translateY(40%);
+                -ms-transform: translateY(40%);
+                    transform: translateY(40%);
         }
     #empty-room .card-comment .time-use span {
         color: #737373;
@@ -376,14 +416,17 @@ img{
     padding: 10px 20px;
     border : none;
     border-radius: 20px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);;
 }
 /* room */
 #room h2{
     margin: 20px 0px;
 }
 #room .list-room{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 50px;
 }
@@ -408,7 +451,9 @@ img{
     font-size: 14px;
     top: 25px;
     right: 25px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 #room .list-room .card-room .icon-star i{
     color: #FFA726;
@@ -418,7 +463,9 @@ img{
 }
 #room .list-room .card-room .address i{
     font-size: 15px;
-    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px);
 }
 #room .list-room .card-room .price{
     text-align: right;
